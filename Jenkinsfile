@@ -12,11 +12,11 @@ pipeline {
 				git([url:'https://github.com/CarineTalandier/tp-CI-jenkins', branch:'main'])
 			}
 		}
-		stage('Run integration test'){
-			steps {
-				bat 'cd back && npm i && npm test && cd ..'
-			}
-		}
+		// stage('Run integration test'){
+		// 	steps {
+		// 		bat 'cd back && npm i && npm test && cd ..'
+		// 	}
+		// }
 		stage('Update Back-end Docker image to latest'){
 			steps {
 				bat 'docker-compose pull back'
