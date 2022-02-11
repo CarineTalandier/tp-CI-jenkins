@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Pull') {
 			steps {
-				git([url:'https://github.com/CarineTalandier/tp-CI-jenkins', branch:'main'])
+				git([url:'https://github.com/CarineTalandier/tp-CI-jenkins', branch:'develop'])
 			}
 		}
 		stage('Run integration test'){
