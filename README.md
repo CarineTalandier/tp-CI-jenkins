@@ -1,1 +1,1 @@
-# tp-CI-jenkins carine talandier
+# tp-CI-jenkins
